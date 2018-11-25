@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListPreference
+        android:key="@string/key_difficulty"
+        android:title = "Difficulty"
+        android:entries="@array/difficulty_array"
+        android:entryValues="@array/difficulty_int_array"
+        android:summary="Select a difficulty for the game"
+        android:icon="@drawable/ic_tune_black_24dp"
+        />
+    <Preference android:title="Reset All Progress"
+        android:key="@string/key_reset"
+        android:icon="@drawable/ic_warning_black_24dp"
+        android:summary="Cleared data cannot be recovered."/>
+
+</PreferenceScreen>
